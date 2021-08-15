@@ -1,6 +1,6 @@
 # djangocms-mdeditor
 
-[![PyPI version][fury-badge]][fury-badge]
+[![PyPI version](https://badge.fury.io/py/djangocms-mdeditor.svg)](https://badge.fury.io/py/djangocms-mdeditor)
 
 djangocms-mdeditor is a ready-for-use addon for django CMS text editor using [Martor](https://github.com/agusmakmun/django-markdown-editor) as markdown-enabled text editor.
 The addon provides simple text editing using markdown, or the WYSIWYG-style setup provided by Martor (supports Bootstrap and Semantic-UI).
@@ -62,5 +62,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [github]: https://github.com/danniranderis/djangocms-mdeditor
 [pypi]: https://pypi.org/project/djangocms-mdeditor/
-[fury-badge]: https://badge.fury.io/py/djangocms-mdeditor
 [github-danni]: https://github.com/danniranderis
