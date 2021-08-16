@@ -4,6 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = ">=3.2"
+martor = ">=1.6.4"
+django-cms = ">=3.9"
 
 [dev-packages]
 setuptools = "*"
