@@ -13,31 +13,43 @@ The addon provides simple text editing using markdown, or the WYSIWYG-style setu
 - `Martor>=1.6.4`
 - `django-cms>=3.9`
 
-## Installation WIP
+## Installation
 `djangocms-mdeditor` is available directly from [PyPi][pypi].
 
 1. Install the package into your project via e.g. `pip install djangocms-mdeditor`.
-2. Add `djangocms-mdeditor` to your `INSTALLED_APPS`, similar to:
+2. Add `djangocms-mdeditor` and its requirement `martor` to your `INSTALLED_APPS`, similar to:
 
 ```python
 # settings.py
 INSTALLED_APPS = [
     ...
     'djangocms-mdeditor',
+    'martor',
 ]
 ```
 
-3. urls steps? any important for django-cms? WIP
+3. To be able to use the editors preview-function and more, you need to add the following to your `urls.py`.  
+Be sure to place it _before_ the `cms.urls`-include:
+
+```python
+urlpatterns = [
+    ...
+    re_path(r'martor/', include('martor.urls')),
+    re_path(r'^', include('cms.urls')),
+]
+```
+
 4. Perform a database migration with `python manage.py migrate djangocms-mdeditor`.
 5. If you don't have automatic static-collection configured for deployments, then remember to perform a `python manage.py collectstatic`.
 
 
-## Usage WIP
-Admins, templates etc. Reference to Martor for extra settings etc.?
+## Usage / Settings
+For extra settings regarding the editor - please see the [Martor](https://github.com/agusmakmun/django-markdown-editor) project.
 
 
 ## Changelog
-The release history / changelog is listed in XX.
+The release history / changelog is listed in the `CHANGES.md`-file.  
+[CHANGES]
 
 
 ## Contributing
@@ -63,3 +75,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [github]: https://github.com/danniranderis/djangocms-mdeditor
 [pypi]: https://pypi.org/project/djangocms-mdeditor/
 [github-danni]: https://github.com/danniranderis
+[CHANGES]: https://github.com/danniranderis/djangocms-mdeditor/blob/main/CHANGES.md

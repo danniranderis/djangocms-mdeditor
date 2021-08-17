@@ -273,6 +273,7 @@
                 "sha256:1b5a0ea5c0e7b166b2f5895b91a08c14de8915afda4407fb5022a195224958ac",
                 "sha256:fa9e232dfa0c498bd0b8a3a73b8d8a31978304dcef0515adc859d4e096f96f4f"
             ],
+            "markers": "sys_platform == 'linux'",
             "version": "==0.7.1"
         },
         "keyring": {
@@ -372,6 +373,7 @@
                 "sha256:8dd0e9524d6f386271a36b41dbf6c57d8e32fd96fd22b6584679dc569d20899f",
                 "sha256:a5b75cb6f3968abb47af1b40c1819dc519ea82bcc065776a866e8d74c5ca9442"
             ],
+            "markers": "python_version >= '3.6'",
             "version": "==1.2.1"
         },
         "tqdm": {

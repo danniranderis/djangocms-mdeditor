@@ -20,17 +20,19 @@ setup(
     author=__AUTHOR__,
     author_email=__AUTHOR_EMAIL__,
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
-        # 'Programming Language :: Python :: 3.7',
-        # 'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3 :: Only',
         'Framework :: Django',
+        'Framework :: Django :: 3.1',
         'Framework :: Django :: 3.2',
         'Framework :: Django CMS',
         # 'Framework :: Django CMS 3.9',
@@ -39,14 +41,11 @@ setup(
         'Topic :: Software Development',
         'Topic :: Software Development :: Libraries',
     ],
-    python_requires='>=3.9',
+    python_requires='>=3.6',
     install_requires=[
         'django-cms>=3.9',
         'martor>=1.6.4',
     ],
     packages=find_packages(),
     include_package_data=True,
-    # package_data={
-    #     'ff': ['f']
-    # },
 )
